@@ -1,0 +1,6 @@
+******************************************************************
+    simple-image-uploader is Rails 3 Image uploader generator
+******************************************************************
+
+Example:
+    rails g simple-image-uploader
