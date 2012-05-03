@@ -7,6 +7,7 @@ Gem::Specification.new do |gem|
   gem.description   = "simple-image-uploader creates Image scaffold with file upload and removal. It is based on carrierwave and mini-imagegick gems. Image model, controller and form are have simple code that allows any application to use image upload immediately. Add simple-image-uploader gem to your Gemfile. Run bundle install. Then run 'rails g simple_image_uploader'. Run rails s and check http://localhost:3000/images. "
   gem.summary       = "simple-image-uploader allows you to upload images to your Rails 3 app immediately with minimum of effort."
   gem.homepage      = "https://github.com/designium/simple-image-uploader"
+  gem.email         = 'designium+simple@gmail.com'
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -16,4 +17,12 @@ Gem::Specification.new do |gem|
   gem.version       = Simple::Image::Uploader::VERSION
 
   gem.files         = Dir["{lib}/**/*", "[A-Z]*"]
+
+  gem.post_install_message = "***************************************"
+  gem.post_install_message = "Thanks for using simple-image-uploader "
+  gem.post_install_message = "                                       "
+  gem.post_install_message = "Any problem? Suggestion? Send an email:"
+  gem.post_install_message = "  email: designium+simple@gmail.com    "
+  gem.post_install_message = "***************************************"
+
 end
