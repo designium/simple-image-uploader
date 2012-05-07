@@ -2,6 +2,10 @@
 
 simple-image-uploader is a Rails 3 generator that creates a small scaffold class called Image. It enables image upload feature to your web app at no time. 
 
+# Demo
+
+    http://morning-sunset-6203.heroku.com/images
+
 ## Installation
 
 Add this line to your application's Gemfile:
