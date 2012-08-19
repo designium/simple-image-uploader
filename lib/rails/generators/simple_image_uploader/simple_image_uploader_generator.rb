@@ -13,6 +13,7 @@ module SimpleImageUploader
         copy_file "images_controller.rb", "app/controllers/images_controller.rb"
         copy_file "application_controller.rb", "app/controllers/application_controller.rb"
         copy_file "file_uploader.rb", "app/uploaders/file_uploader.rb"
+        remove_file "image.rb", "app/models/image.rb"
         copy_file "image.rb", "app/models/image.rb"
         directory "images", "app/views/images/"
       end
