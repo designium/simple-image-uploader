@@ -6,14 +6,13 @@ module SimpleImageUploader
       def create_image_model
         generate("model", "image description:string file:string")
         rake("db:migrate")
+        remove_file "image.rb", "app/models/image.rb"
       end
 
       def generate_image_everything
         # Copy the controllers for user, sessions and password_reset
         copy_file "images_controller.rb", "app/controllers/images_controller.rb"
-        copy_file "application_controller.rb", "app/controllers/application_controller.rb"
         copy_file "file_uploader.rb", "app/uploaders/file_uploader.rb"
-        remove_file "image.rb", "app/models/image.rb"
         copy_file "image.rb", "app/models/image.rb"
         directory "images", "app/views/images/"
       end
