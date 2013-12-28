@@ -1,12 +1,10 @@
 
 <table>
   <tr>
-    <th>Description</th>
     <th>File</th>
   </tr>
   <% for image in @images %>
     <tr>
-      <td><%= image.description %></td>
       <td><%= image_tag image.file %></td>
       <td><%= link_to "Show", image %></td>
       <td><%= link_to "Edit", edit_image_path(image) %></td>

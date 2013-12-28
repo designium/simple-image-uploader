@@ -2,7 +2,7 @@
 
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/designium/simple-image-uploader)
 
-simple-image-uploader is a Rails 3 generator that creates a small scaffold class called Image. It enables image upload feature to your web app at no time.
+simple-image-uploader is a Rails 4 generator that creates a small scaffold class called Image. It enables image upload feature to your web app at no time. If you need the simple-image-uploader for Rails 3, please go to version 0.14. The Rails 4 version has significant changes.
 
 # Demo
 

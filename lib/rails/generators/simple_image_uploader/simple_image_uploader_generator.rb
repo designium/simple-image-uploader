@@ -4,9 +4,9 @@ module SimpleImageUploader
       source_root File.expand_path('../templates', __FILE__)
 
       def create_image_model
-        generate("model", "image description:string file:string")
+        generate("model", "image file:string imageable_id:integer imageable_type:string")
         rake("db:migrate")
-        remove_file "image.rb", "app/models/image.rb"
+        remove_file "app/models/image.rb"
       end
 
       def generate_image_everything
